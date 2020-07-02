@@ -10,6 +10,7 @@
  */
  
 int menuSelect(){
+	system("cls");
 	printf("\n\n\t\t\t   ___           _                             _                 \n");
 	printf("\t\t\t  |_  |         | |                           | |                \n");
 	printf("\t\t\t    | |_   _  __| | __ _  ___    ___ _   _ ___| |_ ___ _ __ ___  \n");
@@ -55,7 +56,8 @@ int parser(int argc , char *argv[]){
 		1 - for generator : -g path
 		2 - for judge : -j testcase path
 		3 - for judge : -j testcase path -c code path
-		4 - help : -h or -help or -?
+		4 - for judge : -j testcase path -c code path -t time limit
+		5 - help : -h or -help or -?
 	*/
 	if(strcmp(argv[1],"-g")==0 && argc==3){
 		return 1;
@@ -69,16 +71,10 @@ int parser(int argc , char *argv[]){
 	else if ((strcmp(argv[1],"-h")==0 || strcmp(argv[1],"-h")==0 || strcmp(argv[1],"-?")==0 || strcmp(argv[1],"-help")==0) && argc==2){
 		return 4;
 	}
+	else if(strcmp(argv[1],"-j")==0 && argc==7){
+		return 5;
+	}
 	else {
 		return 0;
 	}
-	
-}
-
-/** 
- * This function prints press any key to continue in std output
- */
-
-inline void pressAnyKey(){
-	puts("\nPress any key to continue...");
 }

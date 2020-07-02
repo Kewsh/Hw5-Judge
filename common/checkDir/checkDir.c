@@ -19,4 +19,3 @@ int checkDir(const char dirPath[]){
 	    return -1;
 	}
 }
-

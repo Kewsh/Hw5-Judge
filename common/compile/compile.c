@@ -13,14 +13,11 @@
 int compile(const char filePath[] ,char exeName[]){
 	struct stat buffer;
 	int stat=-1; // 0 for ok
-	char cmd[50]="gcc -o ";
-	strcat(cmd,exeName);
-	strcat(cmd," ");
-	strcat(cmd,filePath);
-//	puts(cmd);
+	char cmd[MAX_ARRAY_SIZE];
+	sprintf(cmd, "gcc -o %s %s", exeName, filePath);
 	stat=system(cmd);
-	if(stat==0){
+	if(stat==0)
 		return 0;
-	}
-	else return -1;
+	else
+		return -1;
 }

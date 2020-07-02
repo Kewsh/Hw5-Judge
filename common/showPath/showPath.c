@@ -5,13 +5,11 @@
  */
 
 void showPath(){
-	char cwd[100];
+	char cwd[MAX_ARRAY_SIZE];
 	if (getcwd(cwd, sizeof(cwd)) != NULL) {
 	    printf("Current working dir: %s\n", cwd);
 	}
 	else {
-		changeColor(RED);
-	    perror("Unable to show path ...");
-	    changeColor(WHITE);
+	    printError("Unable to show path ...");
 	}
 }

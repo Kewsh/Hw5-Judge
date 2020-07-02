@@ -14,9 +14,7 @@ int numberOfFiles(const char filePath[]){
 	int fileCounter=0; 
     DIR *dr = opendir(filePath); 
     if (dr == NULL){  // opendir returns NULL if couldn't open directory
-    	changeColor(RED);
-        printf("Could not open current directory.\n" ); 
-        changeColor(WHITE);
+        printError("Could not open current directory.\n" ); 
         return -1; 
     } 
     while ((de = readdir(dr)) != NULL){

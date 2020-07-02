@@ -1,6 +1,12 @@
 # Prerequisites
 *.d
 
+# Cpp files
+*.cpp
+*.c++
+*.cp
+*.cx
+
 # Object files
 *.o
 *.ko

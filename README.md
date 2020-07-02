@@ -13,7 +13,8 @@
 * Or use code below :
 
 ```
-gcc main.c generator/generator.c judge/judge.c common/showPath/showPath.c common/numberOfFiles/numberOfFiles.c common/compile/compile.c common/checkEmptyFile/checkEmptyFile.c common/checkDir/checkDir.c common/changeColor/changeColor.c common/copyFile/copyFile.c -o hw-judge.exe
+gcc main.c generator/generator.c judge/judge.c common/showPath/showPath.c common/numberOfFiles/numberOfFiles.c common/compile/compile.c common/checkEmptyFile/checkEmptyFile.c common/checkDir/checkDir.c common/changeColor/changeColor.c common/copyFile/copyFile.c common/errorHandeling/errorHandeling.c common/searchInFile/searchInFile.c -o hw-judge.exe
+
 ```
 
 
@@ -25,6 +26,7 @@ gcc main.c generator/generator.c judge/judge.c common/showPath/showPath.c common
   - `hw-judge.exe -g [file path]` to use generator
   - `hw-judge.exe -j [testcase folder path] -c [code path]` to use judge
   - `hw-judge.exe -j [testcase folder path]` to use judge without code ( program will ask for code input in next steps )
+  - `hw-judge.exe -j [testcase folder path] -c [code path] -t [time limit]` to use judge with time limit
   - `hw-judge.exe -h | -help | -?` for help
 
 ## Requirements :
