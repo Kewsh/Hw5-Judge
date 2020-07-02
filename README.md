@@ -14,7 +14,6 @@
 
 ```
 gcc main.c generator/generator.c judge/judge.c common/showPath/showPath.c common/numberOfFiles/numberOfFiles.c common/compile/compile.c common/checkEmptyFile/checkEmptyFile.c common/checkDir/checkDir.c common/changeColor/changeColor.c common/copyFile/copyFile.c common/errorHandeling/errorHandeling.c common/searchInFile/searchInFile.c -o hw-judge.exe
-
 ```
 
 
