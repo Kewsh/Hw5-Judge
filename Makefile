@@ -49,5 +49,7 @@ common/changeColor/changeColor.o: common/changeColor/changeColor.c
 common/copyFile/copyFile.o: common/copyFile/copyFile.c
 	$(CC) -c common/copyFile/copyFile.c -o common/copyFile/copyFile.o $(CFLAGS)
 	
-common/showPath/showPath.o: common/showPath/showPath.c
-	$(CC) -c common/showPath/showPath.c -o common/showPath/showPath.o $(CFLAGS)	
+common/errorHandeling/errorHandeling.o: common/errorHandeling/errorHandeling.c
+	$(CC) -c common/errorHandeling/errorHandeling.c -o common/errorHandeling/errorHandeling.o $(CFLAGS)
+	
+
